@@ -10,11 +10,8 @@ import android.util.AttributeSet;
 import android.util.Xml;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
-import android.view.animation.RotateAnimation;
-import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -26,7 +23,10 @@ public class ReflectResource {
     private Resources resources;
     private String str;
 
-    public ReflectResource(Resources resources, String str) {
+//    public Context mContext;
+
+    public ReflectResource( Resources resources, String str) {
+//        this.mContext = externalPackageContext;
         this.resources = resources;
         this.str = str;
     }
